@@ -10,7 +10,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 
-    <title>Hello, world! | this is the title text</title>
+    <title>Craigslist Apartment Finder</title>
 </head>
 <body>
 
@@ -45,11 +45,10 @@
     -->
     {% set nav_links = [
         ('/about', 'about', 'About'),
-        ('/hello', 'hello', 'Hello'),
         ('/search/form', 'search_form', 'Search for Listings'),
     ] -%}
     {% set active_page = active_page|default('home') -%}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-light" style="background-color: #a193c4;">
         <div class="container-fluid">
             <!--a class="navbar-brand" href="/">My Web App</a-->
             <a class="navbar-brand" href="/">
@@ -57,9 +56,9 @@
                     ICONS
                     https://icons.getbootstrap.com/
                 -->
-                <i class="bi bi-bootstrap-reboot" style="font-size: 1.7rem; color: white;"></i>
+                <i class="bi bi-house-heart" style="font-size: 2.5rem; color: white;"></i>
                 &nbsp;
-                My Web App
+                <span style="color: white; font-weight: bold; font-size: 2rem;">Craigslist Apartment Finder</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
