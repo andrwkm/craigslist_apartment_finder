@@ -8,10 +8,10 @@
 
     <div class ="my-3"></div>
 
-    <form method="GET" action="/search/results">
+    <form method="POST" action="/search/results">
         <div class="input-group input-group-lg">
             <span class="input-group-text" id="inputGroup-sizing-lg">Office Address</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="office" placeholder="Enter your office address here">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="office" placeholder="Enter your office address here" value="">
         </div>
 
         <div class="my-3"></div>
@@ -35,29 +35,29 @@
 
         <div class="mb-3">
             <label for="search_query" class="form-label">General Search</label>
-            <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter search terms">
+            <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter search terms" value="">
         </div>
 
         <div class="input-group">
             <span class="input-group-text">Monthly Rent</span>
-            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minRent">
-            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxRent">
+            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minRent" value="">
+            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxRent" value="">
         </div>
 
         <div class="my-3"></div>
 
         <div class="input-group">
             <span class="input-group-text">Beds</span>
-            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minBeds">
-            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxBeds">
+            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minBeds" value="">
+            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxBeds" value="">
         </div>
 
         <div class="my-3"></div>
 
         <div class="input-group">
             <span class="input-group-text">Bathrooms</span>
-            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minBaths">
-            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxBaths">
+            <input type="number" aria-label="Minimum" class="form-control" placeholder="Minimum" name="minBaths" value="">
+            <input type="number" aria-label="Maximum" class="form-control" placeholder="Maximum" name="maxBaths" value="">
         </div>
 
         <div class="my-3"></div>
