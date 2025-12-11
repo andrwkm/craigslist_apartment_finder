@@ -7,10 +7,8 @@ import pandas as pd
 import time
 
 
-def setup_driver():
-
-    #Autoinstaller code snippet found from: https://stackoverflow.com/questions/67626049/how-to-add-chromedriver-to-my-github-repository
-    chromedriver_autoinstaller.install()
+def setup_driver(): #altered for deployment
+    #guided by AI: https://claude.ai/share/ff9d72bf-1d3e-4689-aecc-6147cecfd49d
     
     #Chrome driver options
     chrome_options = webdriver.ChromeOptions()
@@ -18,10 +16,15 @@ def setup_driver():
     chrome_options.add_argument("--disable-infobars")
     chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument("--headless")
-    chrome_options.add_experimental_option("detach", True)
-    chrome_options.add_argument('--window-size=1920,1080')  #setting large enough size to ensure all interactions
-    chrome_options.add_argument('--start-maximized') 
-
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--start-maximized')
+    
+    # Only use chromedriver-autoinstaller locally, not in production
+    import os
+    if os.environ.get('RENDER') != 'true':
+        chromedriver_autoinstaller.install()
+    
     driver = webdriver.Chrome(options=chrome_options)
     
     return driver
