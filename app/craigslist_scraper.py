@@ -7,7 +7,7 @@ import pandas as pd
 import time
 
 
-def setup_driver():
+def setup_driver():  #claude helped modify for deployment purposes: https://claude.ai/share/e3beed93-ff44-443e-83c8-94412b37806e 
     # Docker container has Chrome pre-installed
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--no-sandbox')
