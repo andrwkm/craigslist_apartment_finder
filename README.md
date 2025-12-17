@@ -15,9 +15,9 @@ Create a virtual environment and activate it.
 
 ```sh
 conda create -n commutable_apartment_finder python=3.11
-'''
+```
 
-'''sh
+```sh
 conda activate commutable_apartment_finder
 ```
 
